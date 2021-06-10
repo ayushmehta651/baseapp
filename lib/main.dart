@@ -1,5 +1,4 @@
 import 'package:baseapp/meta/views/home_view/home_view.dart';
-import 'package:baseapp/meta/views/splash_view/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'app/providers/providers.dart';
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         child: MaterialApp(
           theme: ThemeData.dark(),
-          home: SplashView(),
+          home: HomeView(),
           debugShowCheckedModeBanner: false,
         ),
         providers: providers);
